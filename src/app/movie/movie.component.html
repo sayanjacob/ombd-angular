@@ -1,0 +1,17 @@
+<div *ngIf="movies.length > 0" class="movie-grid">
+    <div *ngFor="let movie of movies" class="movie-card">
+        <div class="card">
+            <div class="card-image">
+                <img [src]="'https://image.tmdb.org/t/p/w500' + movie.poster_path" alt="{{ movie.title }}">
+            </div>
+            <div class="card-content">
+                <div class="category">{{ movie.title }}</div>
+                <!-- <div class="overview">{{ movie.overview }}</div> -->
+                
+            </div>
+        </div>
+    </div>
+</div>
+<div *ngIf="movies.length === 0">
+    <p>Loading movies...</p>
+</div>

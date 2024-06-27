@@ -1,0 +1,12 @@
+.login{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+.login-form{
+    border-radius: 0;
+    border: 1.5px solid gray;
+}
+.login-form:focus{
+    box-shadow: none;
+    border:1.5px solid black
+}

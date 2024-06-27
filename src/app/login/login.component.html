@@ -1,0 +1,26 @@
+<div class="container-fluid login">
+    <div class="row m-2">
+        <div class="col-6 card py-5 px-3">
+            <form (ngSubmit)="onSubmit()" class="row g-3 needs-validation" novalidate>
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control login-form" id="email" [(ngModel)]="email" name="email" autocomplete="email" required>
+                    <div class="invalid-feedback">
+                        Please provide a valid email.
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control login-form" id="password" [(ngModel)]="password" name="password" autocomplete="current-password"
+                        required>
+                    <div class="invalid-feedback">
+                        Please provide a valid password.
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button class="btn btn-primary" type="submit">Submit form</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
