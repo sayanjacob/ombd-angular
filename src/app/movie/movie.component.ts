@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common'; 
+import {HeaderComponent} from '../header/header.component'
 
 import axios from 'axios';
 
@@ -7,7 +8,7 @@ import axios from 'axios';
   selector: 'app-movie',
   templateUrl: './movie.component.html',
   styleUrls: ['./movie.component.scss'],
-  imports: [CommonModule],
+  imports: [CommonModule,HeaderComponent],
   standalone:true
 
 })
